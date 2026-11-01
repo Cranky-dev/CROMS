@@ -117,4 +117,15 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     });
+    // Shared footer markup
+    const footerHTML = `
+        <footer class="footer a1-bg p3 b1 bs r1 z10">
+            <p class="text-center">
+                &copy; 2026 CROMS. All rights reserved.
+            </p>
+        </footer>
+    `;
+
+    // Inject footer at the end of the body
+    document.body.insertAdjacentHTML("beforeend", footerHTML);
 });
